@@ -1,0 +1,13 @@
+{
+  "name": "genesis-demo-theme",
+  "version": "1.1.1",
+  "description": "A custom WordPress theme for the genesis framework",
+  "main": "Gruntfile.js",
+  "author": "QC Creative / Josh Lee",
+  "license": "GPL",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-less": "~0.9.0",
+    "grunt-contrib-watch": "~0.5.3"
+  }
+}
