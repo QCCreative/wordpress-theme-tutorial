@@ -3,8 +3,9 @@
 
 function demotheme_scripts_n_styles() {
 	// Load our main stylesheet.
-	//wp_enqueue_style( 'demotheme-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'demotheme-style', get_stylesheet_uri() );
 }
+add_action( 'wp_enqueue_scripts', 'demotheme_scripts_n_styles' );
 
 //* Main Stylesheet (not for IE)
 function no_ie_css(){ ?>
@@ -14,7 +15,6 @@ function no_ie_css(){ ?>
 <?php } 
 add_action( 'wp_head', 'no_ie_css' );
 
-add_action( 'wp_enqueue_scripts', 'demotheme_scripts_n_styles' );
 
 function register_my_menu() {
   register_nav_menu('extra-header-menu',__( 'Header Menu' ));
